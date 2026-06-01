@@ -1,0 +1,51 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f7fb;
+  color: #333;
+}
+
+.hero-section {
+  background-color: darkcyan;
+  color: white;
+  padding: 60px 0;
+}
+
+.page-banner {
+  background-color: darkcyan;
+  color: white;
+  padding: 40px 0;
+}
+
+.carousel-img {
+  height: 400px;
+  object-fit: cover;
+}
+
+.card,
+.modal-content,
+.accordion-item {
+  border-radius: 10px;
+}
+
+.py-5 bg-light
+{
+  text-align: center;
+}
+
+.hero-section {
+  text-align: center;
+}
+
+.hero-img {
+  width: 500px;
+  max-width: 90%;
+  border-radius: 20px;
+  display: block;
+  margin: 0 auto;
+}
+.hero-section .col-lg-6:first-child {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
