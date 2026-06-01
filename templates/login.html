@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -14,36 +15,25 @@
 
     <div class="login-box">
 
-        <h1>FSC</h1>
-        <p>Faça login para continuar</p>
+        <h1>Bem Vindo Aluno!</h1>
+        <p>Faça login para acessar seu boletim</p>
 
         <form method="POST">
 
-            <input
-                type="text"
-                name="usuario"
-                placeholder="Usuário"
-                required
-            >
+            <inputtype="text" name="usuario" placeholder="Usuário" required>
 
-            <input
-                type="password"
-                name="senha"
-                placeholder="Senha"
-                required
-            >
+                <input type="password" name="senha" placeholder="Senha" required>
 
-            <button type="submit">
-                Entrar
-            </button>
+                <button type="submit">Entrar</button>
 
         </form>
 
         {% if erro %}
-            <p class="erro">{{ erro }}</p>
+        <p class="erro">{{ erro }}</p>
         {% endif %}
 
     </div>
 
 </body>
+
 </html>
