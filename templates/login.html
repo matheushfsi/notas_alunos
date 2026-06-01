@@ -1,32 +1,49 @@
-<div class="login-box">
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <h1>FSC</h1>
-    <p>Faça login para continuar</p>
+    <title>Login</title>
 
-    <form method="POST">
+    <!-- CSS externo -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
 
-        <input
-            type="text"
-            name="usuario"
-            placeholder="Usuário"
-            required
-        >
+<body>
 
-        <input
-            type="password"
-            name="senha"
-            placeholder="Senha"
-            required
-        >
+    <div class="login-box">
 
-        <button type="submit">
-            Entrar
-        </button>
+        <h1>FSC</h1>
+        <p>Faça login para continuar</p>
 
-    </form>
+        <form method="POST">
 
-    {% if erro %}
-        <p class="erro">{{ erro }}</p>
-    {% endif %}
+            <input
+                type="text"
+                name="usuario"
+                placeholder="Usuário"
+                required
+            >
 
-</div>
+            <input
+                type="password"
+                name="senha"
+                placeholder="Senha"
+                required
+            >
+
+            <button type="submit">
+                Entrar
+            </button>
+
+        </form>
+
+        {% if erro %}
+            <p class="erro">{{ erro }}</p>
+        {% endif %}
+
+    </div>
+
+</body>
+</html>
