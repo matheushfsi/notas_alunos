@@ -32,11 +32,7 @@ def login():
         conexao = conectar()
         cursor = conexao.cursor()
 
-        sql = """
-        SELECT id, usuario
-        FROM usuarios
-        WHERE usuario = %s AND senha = %s
-        """
+        sql = """SELECT id, usuario FROM usuarios WHERE usuario = %s AND senha = %s"""
 
         cursor.execute(sql, (usuario, senha))
         resultado = cursor.fetchone()
@@ -63,11 +59,7 @@ def aluno():
     conexao = conectar()
     cursor = conexao.cursor()
 
-    sql = """
-    SELECT materia, nota, faltas
-    FROM notas_alunos
-    WHERE usuario_id = %s
-    """
+    sql = """SELECT materia, nota, faltas FROM notas_alunos WHERE usuario_id = %s"""
 
     cursor.execute(sql, (id_usuario,))
     notas = cursor.fetchall()
