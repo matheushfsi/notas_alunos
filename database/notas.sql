@@ -23,15 +23,15 @@ VALUES (
 
 INSERT INTO notas_alunos (usuario_id, materia, nota, faltas)
 VALUES
-(1, 'Matemática', 8.5, 2),
-(1, 'Português', 7.8, 1),
-(1, 'História', 9.2, 0),
+(1, 'Matematica', 8.5, 2),
+(1, 'Portugues', 7.8, 1),
+(1, 'Historia', 9.2, 0),
 (1, 'Geografia', 8.0, 1),
 (1, 'Biologia', 8.7, 2),
-(1, 'Química', 7.5, 3),
-(1, 'Física', 8.1, 2),
-(1, 'Inglês', 9.0, 0),
-(1, 'Educação Física', 10.0, 0),
+(1, 'Quimica', 7.5, 3),
+(1, 'Fisica', 8.1, 2),
+(1, 'Ingles', 9.0, 0),
+(1, 'Educacao Fisica', 10.0, 0),
 (1, 'Filosofia', 8.4, 1),
 (1, 'Sociologia', 8.8, 0),
-(1, 'Informática', 9.7, 0);
+(1, 'Informatica', 9.7, 0);
